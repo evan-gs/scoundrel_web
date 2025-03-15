@@ -5,5 +5,17 @@ Cards from 2 to 10 of every suits will be present. Black suits will have A, J, Q
 
 The works as a dungeon crawler in the following way: 
 - The player starts with 20 health points (HP), and must navigate through rooms with 4 cards. Every card that is inserted in the room comes from the 44 card deck, pre-shuffled. The play must interact with 3 cards of his choice on each room, and after interacting with 3 cards, he will proceed to another room (represented by 3 cards being added to the table).
+
 - The objective of the game is to clear all 44 cards of the deck without reaching 0 HP or less. the score of the game is represented by the final HP of the player.
-- Hearts represent health potions, diamonds represent weapons to be equipped, clubs and spades represent monsters/enemies.
+
+- Hearts represent health potions, diamonds represent weapons to be equipped, clubs and spades represent monsters/enemies. Their value is represented by the card value X; health cards heal your HP by X, enemies you fight take X HP from you, weapons can be used to subtract the value of an enemy you fight by X.
+
+- You can interact with a weapon card in a room to equip it. While equipping a weapon, players can choose to either fight bare-handed (the default way, where you just subtract the value of the monster from your HP) or with the weapon (where the value of the weapon reduces the value of the monster by subtraction when you fight it). You can use a weapon on a monster regardless of their respective values, HOWEVER a weapon can only be used by monsters with a lower value than the last monster that was fought with the weapon; for instance, if you use a weapon on a monster with value 12 (the Q card), you can only use it on monsters of value 11 or less.
+
+- You can only equip one weapon at a time. Interacting with a weapon in a room will unequip your current weapon and reset the durability of the weapon (you will be able to slay any monster on first use). Slaying a monster with value 2 unequips the current weapon.
+
+- The monsters go from values 2 to 10, then 11 to 14 (J, Q, K and A cards, respectively).
+
+- You can never go above 20 HP. If you take a health potion that would leave you with HP higher than 20, the HP is set to 20.
+
+- The player can choose to skip a room, if no action has been done yet. When choosing to skip a room, all 4 cards of the room will be shuffled, then inserted in the bottom of the main deck. A player can always skip a room, however he cannot skip two rooms in a row.
