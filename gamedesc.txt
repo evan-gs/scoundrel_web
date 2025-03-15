@@ -1,0 +1,9 @@
+As per the official game description of the dungeon crawler:
+
+Game must be played with 44 cards of a standard deck.
+Cards from 2 to 10 of every suits will be present. Black suits will have A, J, Q and K cards.
+
+The works as a dungeon crawler in the following way: 
+- The player starts with 20 health points (HP), and must navigate through rooms with 4 cards. Every card that is inserted in the room comes from the 44 card deck, pre-shuffled. The play must interact with 3 cards of his choice on each room, and after interacting with 3 cards, he will proceed to another room (represented by 3 cards being added to the table).
+- The objective of the game is to clear all 44 cards of the deck without reaching 0 HP or less. the score of the game is represented by the final HP of the player.
+- Hearts represent health potions, diamonds represent weapons to be equipped, clubs and spades represent monsters/enemies.
